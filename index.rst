@@ -3,20 +3,19 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-PROJECT NAME
-============
-
-..
-    #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
-    sharing data ####
+RNA-Seq with Kallisto and Sleuth
+=================================
 
 Goal
 ----
 
-..
-    #### Comment: Avoid covering upstream and downstream steps that are not explicitly and
-    necessarily part of the tutorial - write or link to separate quick
-    starts/tutorials for those parts ####
+**Analyze RNA-Seq data for differential expression**. `Kallisto <https://pachterlab.github.io/kallisto/about>`_ is a quick, highly-efficient
+software for quantifying transcript abundances in an RNA-Seq experiment. Even on
+a typical laptop, Kallisto can quantify 30 million reads in less than 3 minutes.
+Integrated into CyVerse, you can take advantage of CyVerse data management tools
+to process your reads, do the Kallisto quantification, and analyze your reads
+with the Kallisto companion software `Sleuth <https://pachterlab.github.io/sleuth/about>`_ in an R-Studio environment.
+
 
 ----
 
@@ -24,13 +23,15 @@ Goal
 	:maxdepth: 2
 
 	Tutorial home <self>
-	Step One <step1.rst>
+	Organize Kallisto Input Data <step1.rst>
+	Build Kallisto Transcriptome Index <step2.rst>
+	Quantify Reads with Kallisto <step3.rst>
+	Analyze Kallisto Results with Sleuth <step4.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'Step Owo' with content located in 'step1.rst'
 	Edit these titles and filenames as needed ####
-
 
 Prerequisites
 -------------
@@ -52,12 +53,11 @@ Downloads, access, and services
     * - CyVerse account
       - You will need a CyVerse account to complete this exercise
       - `Register <https://user.cyverse.org/>`_
-    * - Atmosphere access
-      - You must have access to Atmosphere
+    * - Atmosphere access (optional)
+      - This tutorial will use R studio in Atmosphere; if desired you can
+        complete these sections by installing the Sleuth tools on your own R
+        instance
       - `Request Access <https://user.cyverse.org/>`_
-    * - Cyberduck
-      - Standalone software for upload/download to Data Store
-      - `Download <https://cyberduck.io/>`_
 
 Platform(s)
 ~~~~~~~~~~~
@@ -76,35 +76,21 @@ Platform(s)
       - Platform Documentation
       - Quick Start
     * - Data Store
-		  - GUI/Command line
+      - GUI/Command line
       - `Data Store <http://www.cyverse.org/data-store>`_
-			- `Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Data+Store+Table+of+Contents>`_
-			- `Guide <>`__
-		* - Discovery Environment
+      - `Data Store Manual <https://wiki.cyverse.org/wiki/display/DS/Data+Store+Table+of+Contents>`_
+      - `Guide <http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/>`__
+    * - Discovery Environment
       - Web/Point-and-click
       - `Discovery Environment <https://de.cyverse.org/de/>`_
       - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
-      - `Guide <>`__
+      - `Guide <http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/>`__
     * - Atmosphere
       - Command line (ssh) and/or Desktop (VNC)
       - `Atmosphere <https://atmo.cyverse.org>`_
       - `Atmosphere Manual <https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents>`_
-      - `Guide <>`__
-    * - BisQue
-      - Web/Point-and-click and/or Command-line (API)
-      - `BisQue <https://bisque.cyverse.org/client_service/>`_
-      - `BisQue Manual <https://wiki.cyverse.org/wiki/display/BIS>`_
-      - `Guide <>`__
-    * - DNA Subway
-      - Web/Point-and-click
-      - `DNA Subway <https://dnasubway.cyverse.org/>`_
-      - `DNA Subway Manual <http://dnasubway.cyverse.org/files/pdf/DNA_Subway_Guide.pdf>`_
-      - `Guide <>`__
-    * - Agave API
-      - Command-line (API)
-      - `Agave API <https://agaveapi.co>`_
-      - `Live Docs <https://agaveapi.co>`_
-      - `Guide <>`__
+      - `Guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`__
+
 
 Application(s) used
 ~~~~~~~~~~~~~~~~~~~
@@ -121,12 +107,17 @@ Application(s) used
       - Description
       - App link
       - Notes/other links
-    * - Muscle
-      - 3.8.31
-      - Multiple sequence aligner
-      -	`DE App link <https://de.iplantcollaborative.org/de/?type=apps&app-id=9b41c9e4-5031-4a49-b1cb-c471335df16e>`_
-      - - `Original Muscle documentation <http://www.drive5.com/muscle/manual/>`_
-      	- `DE Dockerfile <http://wwww.cyverse.org>`_
+    * - Kallisto-0.42.3-INDEX
+      - 0.42.3
+      - Kallisto Index Builder
+      -	`DE App link <https://de.cyverse.org/de/?type=apps&app-id=ffd24602-923e-11e5-843a-e7021d2c7752&system-id=de>`__
+      - `Original documentation <https://pachterlab.github.io/kallisto/manual>`_
+    * - Kallisto-0.42.3-Quant-PE
+      - 0.43.3
+      - Kallisto Quantification
+      - `DE App link <https://de.cyverse.org/de/?type=apps&app-id=38159000-83da-11e5-be5b-d7c855bb70b2&system-id=de>`__
+      - `Original documentation`_
+
 
 **Atmosphere Image(s):**
 
@@ -138,11 +129,13 @@ Application(s) used
       - Description
       - Link
       - Notes/other links
-    * - CyVerse CentOS 6.8 GUI Base
-      - 1.0
-      - base image CentOS 6.8 with GNOME GUI
-      -	`Image <https://atmo.cyverse.org/application/images/1384>`_
-      -
+    * - CyVerse Training Workshop
+      - 1.1.2
+      - Image for use at CyVerse Training Workshops
+      -	`Image <https://atmo.cyverse.org/application/images/1479>`_
+      - This image has Kallisto and Sleuth installed. Once started, an
+        R Studio Server will be available at your image ip address, port 8787
+        (e.g. image.ip.address:8787)
 
 
 
@@ -161,16 +154,22 @@ Input and example data
       - Format
       - Preparation/Notes
       - Example Data
-    * -
-      -
-      -
-      -
+    * - RNA-Seq reads
+      - Fastq (may also be compressed, e.g. fastq.gz)
+      - These reads should have been cleaned by upstream tools
+        such as `Trimmomatic <https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/>`_
+      - `Example fastq files <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed>`_
+    * - Refference transcriptome
+      - fasta
+      - Transcriptome for your organism of interest
+      - `Example transcriptome <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome>`_
+
 
 ----
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/kallisto_tutorial>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
