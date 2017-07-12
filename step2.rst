@@ -44,11 +44,12 @@ needs to be made once.
   3. Name your analysis, and if desired enter comments. In the App's 'Input' step
      under 'Index name' enter a name for your index. For this tutorial, name
      your index **Arabidopsis_thaliana.TAIR10.36.cdna.all.fa.index**.
+  4. For 'Fasta file' browse to the transcriptome imported in the previous section.
 
-  4. If desired adjust the k-mer length (See `Kallisto paper`_ for recommendations);
+  5. If desired adjust the k-mer length (See `Kallisto paper`_ for recommendations);
      we will use the default.
 
-  5. Click 'Launch Analyses' to start the job. Click on the Analyses button
+  6. Click 'Launch Analyses' to start the job. Click on the Analyses button
      to monitor the job and results.
 
 
