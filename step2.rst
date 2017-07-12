@@ -74,7 +74,7 @@ of the RNA-Seq reads.
 ----
 
 More help and additional information
-------------------------------------
+`````````````````````````````````````
 
 ..
     Short description and links to any reading materials (KEEP THIS on LAST PAGE

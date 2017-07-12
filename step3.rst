@@ -104,7 +104,7 @@ Sleuth will be used to examine the Kallisto results in R Studio.
 ----
 
 More help and additional information
-------------------------------------
+`````````````````````````````````````
 
 ..
     Short description and links to any reading materials (KEEP THIS on LAST PAGE

@@ -203,23 +203,8 @@ an Atmosphere image. Then we will follow a R script based on the  `Sleuth Walkth
 	4. Primary menu titles in double quotes: Under "Input" choose...
 	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
 	####
-
-**Output/Results**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Output
-      - Description
-      - Example
-    * -
-      -
-      -
-
-**Description**
-
-
 ----
+
 
 **Summary**
 ~~~~~~~~~~~
@@ -229,7 +214,7 @@ Together, Kallisto and Sleuth are quick, powerful ways to analyze RNA-Seq data.
 ----
 
 More help and additional information
-------------------------------------
+`````````````````````````````````````
 
 ..
     Short description and links to any reading materials (KEEP THIS on LAST PAGE

@@ -101,7 +101,7 @@ in step 6 above.
 
 
 More help and additional information
-------------------------------------
+`````````````````````````````````````
 
 ..
     Short description and links to any reading materials (KEEP THIS on LAST PAGE
