@@ -213,8 +213,8 @@ Together, Kallisto and Sleuth are quick, powerful ways to analyze RNA-Seq data.
 
 ----
 
-More help and additional information
-`````````````````````````````````````
+Additional information, help
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..
     Short description and links to any reading materials (KEEP THIS on LAST PAGE

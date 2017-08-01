@@ -67,26 +67,10 @@ needs to be made once.
 
 ----
 
-**Next Steps:**
+**Description of results and next steps**
 
 With the index, we will now use the Kallisto Quant App to do a pesudoalignment
 of the RNA-Seq reads.
-
-----
-
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials (KEEP THIS on LAST PAGE
-    of Tutorial)
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
 
 ----
 

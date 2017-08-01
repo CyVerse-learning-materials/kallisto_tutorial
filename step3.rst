@@ -89,33 +89,11 @@ Each Kallisto job will generate 3 files
 
 ----
 
-**Summary**
-~~~~~~~~~~~
+**Description of results and next steps**
 
 Kallisto quantifies RNA-Seq reads against an indexed transcriptome and generates
-a folder of results for each set of RNA-Seq reads.
-
-----
-
-**Next Steps:**
-
-Sleuth will be used to examine the Kallisto results in R Studio.
-
-----
-
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials (KEEP THIS on LAST PAGE
-    of Tutorial)
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
+a folder of results for each set of RNA-Seq reads. Sleuth will be used to examine
+the Kallisto results in R Studio.
 
 ----
 

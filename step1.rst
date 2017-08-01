@@ -83,36 +83,15 @@ for your organism of interest, or provide your own fasta-formmatted transcriptom
       - fasta
       - `Example transcriptome`_
 
-**Description**
+
+----
+
+**Description of results and next steps**
 
 This example transcriptome will be indexed in the next step. RNA-Seq reads will
-be mapped against this set of transcripts.
-
-----
-
-**Summary**
-~~~~~~~~~~~
-
-Once you have the transcriptome and your RNA-Seq reads, you can proceed with the
-next step. We suggest organizing your RNA-Seq reads in the folder created
-in step 6 above.
-
-----
-
-
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials (KEEP THIS on LAST PAGE
-    of Tutorial)
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
+be mapped against this set of transcripts. Once you have the transcriptome and
+your RNA-Seq reads, you can proceed with the next step. We suggest organizing
+your RNA-Seq reads in the folder created in step 6 above.
 
 ----
 
