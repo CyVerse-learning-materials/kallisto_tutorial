@@ -207,8 +207,6 @@ an Atmosphere image. Then we will follow a R script based on the  `Sleuth Walkth
 
 
 **Summary**
-~~~~~~~~~~~
-
 Together, Kallisto and Sleuth are quick, powerful ways to analyze RNA-Seq data.
 
 ----
