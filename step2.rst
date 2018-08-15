@@ -37,9 +37,9 @@ We will now index the Arabidopsis transcriptome imported from Ensembl. This
 transcriptome can be used multiple times for future Kallisto analyses and only
 needs to be made once.
 
-  1.  If necessary, login to the CyVerse `Discovery Environment <https://de.cyverse.org/de/>`_
+  1.  If necessary, login to the CyVerse |discovery_enviornment|.
 
-  2. Open the `Kallisto-0.42.3-INDEX App <https://de.cyverse.org/de/?type=apps&app-id=ffd24602-923e-11e5-843a-e7021d2c7752&system-id=de>`_
+  2. Open the |kallisto index|. 
 
   3. Name your analysis, and if desired enter comments. In the App's 'Input' step
      under 'Index name' enter a name for your index. For this tutorial, name
@@ -92,3 +92,10 @@ of the RNA-Seq reads.
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
+
+.. |kallisto index| raw:: html
+
+    <a href="https://de.cyverse.org/de/?type=apps&app-id=ee7ce21e-645c-11e5-a295-d7e4d1e00ab5&system-id=de" target="_blank">Kallisto-0.42.3-index App</a>

@@ -36,14 +36,14 @@ tutorial will take only several minutes to complete.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Kallisto analyses must be run for each mapping of RNA-Seq reads to the index.
-In this tutorial, we have 36 fastq files (18 pairs), so you will need to launch
-18 Kallisto analyses. It is sufficient here to launch a single Kallisto job to
+In this tutorial, we have 36 fastq files (18 pairs), so you will need to add these
+to the Kallisto analyses. It is sufficient here to launch a single Kallisto job to
 examine the input and then use the completed results (which are small files) for
 Sleuth analyses.
 
-  1. If necessary, login to the CyVerse `Discovery Environment <https://de.cyverse.org/de/>`_
+  1. If necessary, login to the CyVerse |discovery_enviornment|.
 
-  2. Open the `Kallisto-0.42.3-Quant-PE App <https://de.cyverse.org/de/?type=apps&app-id=38159000-83da-11e5-be5b-d7c855bb70b2&system-id=de>`_
+  2. Open the |kallisto quant|.
 
   3. Name your analysis, and if desired enter comments. In the App's 'Input' step
      under 'Index file' browse to and select the Kallisto index generated in the previous
@@ -51,18 +51,18 @@ Sleuth analyses.
      that will be created. For this tutorial, name your output directory **pair01_wt_mock_r1**
      (This is for our first pair of WT reads, mock treatment, replicate 1).
 
-  4. Under 'Input Read1&Reaad2 fastq files' enter a single pair (foward/reverse)
-     of reads. In this tutorial click 'Add' to select the following files located in
+  4. Under 'Read 1 Fastq files' and 'Read 1 Fastq files' the respective right ang left sequences.
+     In this tutorial click 'Add' to select the following files located in
      *Community Data > cyverse_training > tutorials > kallisto > 00_input_fastq_trimmed*:
-     - `SRR1761506_R1_001.fastq.gz_fp.trimmed.fastq.gz <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed/SRR1761506_R1_001.fastq.gz_fp.trimmed.fastq.gz>`_
-     - `SRR1761506_R2_001.fastq.gz_fp.trimmed.fastq.gz <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed/SRR1761506_R2_001.fastq.gz_rp.trimmed.fastq.gz>`_
+     - |file1|
+     - |file2|
 
   5. Click 'Launch Analyses' to launch the job and monitor its progress.
 
 
 **Output/Results**
 
-Each Kallisto job will generate 3 files
+Kallisto jobs will generate 3 files per read pair:
 
 
 .. list-table::
@@ -115,3 +115,18 @@ the Kallisto results in R Studio.
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
+
+.. |kallisto quant| raw:: html
+
+    <a href="https://de.cyverse.org/de/?type=apps&app-id=38159000-83da-11e5-be5b-d7c855bb70b2&system-id=de" target="_blank">Kallisto-0.42.3-quant-PE App</a>
+
+.. |file1| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed/SRR1761506_R1_001.fastq.gz_fp.trimmed.fastq.gz" target="_blank">SRR1761506_R1_001.fastq.gz_fp.trimmed.fastq.gz</a>
+
+.. |file2| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed/SRR1761506_R2_001.fastq.gz_rp.trimmed.fastq.gz" target="_blank">SRR1761506_R2_001.fastq.gz_fp.trimmed.fastq.gz</a>

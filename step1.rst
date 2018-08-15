@@ -52,18 +52,17 @@ In this example, we will import a reference transcriptome for Arabidopsis from
 Ensembl. In many cases you can find an appropriate transcriptome from Ensembl
 for your organism of interest, or provide your own fasta-formmatted transcriptome.
 
-  1. Go to the Ensembl Plants Arabidopsis page: `http://plants.ensembl.org/Arabidopsis_thaliana/Info/Index <http://plants.ensembl.org/Arabidopsis_thaliana/Info/Index>`_
+  1. Go to the Ensembl Plants Arabidopsis page:|ensembl|.
 
   2. In the 'Gene annotation' section, click on the 'Download genes, cDNAs, ncRNA,
-     proteins'  'FASTA' link: `ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/ <ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/>`_
+     proteins' 'FASTA' link:|fasta link|.
 
-  3. The transcriptome files will be located in the 'cdna' folder:
-     `ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/cdna/ <ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/cdna/>`_
+  3. The transcriptome files will be located in the 'cdna' folder: |ftp link|.
 
   4. Right-click/command-click on the `Arabidopsis_thaliana.TAIR10.cdna.all.fa.gz`
      and copy the link location/URL to the clipboard
 
-  5. Login to the CyVerse `Discovery Environment <https://de.cyverse.org/de/>`_
+  5. Login to the CyVerse |discovery_enviornment|. 
 
   6. In your home directory, create a folder to organize your Kallisto project
 
@@ -113,3 +112,19 @@ your RNA-Seq reads in the folder created in step 6 above.
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+
+.. |ensembl| raw:: html
+
+    <a href="http://plants.ensembl.org/Arabidopsis_thaliana/Info/Index" target="_blank">http://plants.ensembl.org/Arabidopsis_thaliana/Info/Index</a>
+
+.. |fasta link| raw:: html
+
+    <a href="ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/" target="_blank">ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/</a>
+
+.. |ftp link| raw:: html
+
+    <a href="ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/cdna/" target="_blank">ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/cdna/</a>
+
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
