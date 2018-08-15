@@ -121,7 +121,7 @@ the Kallisto results in R Studio.
 
 .. |kallisto quant| raw:: html
 
-    <a href="https://de.cyverse.org/de/?type=apps&app-id=38159000-83da-11e5-be5b-d7c855bb70b2&system-id=de" target="_blank">Kallisto-0.42.3-quant-PE App</a>
+    <a href="https://de.cyverse.org/de/?type=apps&app-id=c304d9de-66eb-11e5-83d0-b36f5d747f5c&system-id=de" target="_blank">Kallisto-0.42.3-quant-PE App</a>
 
 .. |file1| raw:: html
 
