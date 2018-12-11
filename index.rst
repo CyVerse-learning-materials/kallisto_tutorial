@@ -209,7 +209,3 @@ Post your question to the user forum:
 .. |Example transcriptome| raw:: html
 
     <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome" target="blank">Example transcriptome</a>
-
-.. || raw:: html
-
-    <a href="" target="blank"></a>
