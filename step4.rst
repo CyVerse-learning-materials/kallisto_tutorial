@@ -1,3 +1,5 @@
+.. include:: cyverse_rst_defined_substitutions.txt
+
 |CyVerse logo|_
 
 |Home_Icon|_
@@ -9,7 +11,7 @@ Analyze Kallisto Results with Sleuth
 
 **Description:**
 
-`Sleuth <https://pachterlab.github.io/sleuth/about>`_ is a program for analysis
+|Sleuth manual| is a program for analysis
 of RNA-Seq experiments for which transcript abundances have been quantified with
 kallisto. In this tutorial, we will use R Studio being served from an Atmosphere
 instance.
@@ -26,7 +28,7 @@ instance.
       - Example
     * - Kallisto results folder(s)
       - Outputs from a Kallisto quantification
-      - `Example directory of Kallisto results <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results>`_
+      - |Example directory of Kallisto results|
 
 
 *Import Kallisto results into R and analyze with Sleuth*
@@ -35,12 +37,12 @@ instance.
 .. tip::
 
     If you are not familiar with Atmosphere and transfering data into an instance
-    see the `Atmosphere guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`_
+    see the |Atmosphere guide|
 
 We will import the Kallisto results into an RStudio session being run from
-an Atmosphere image. Then we will follow a R script based on the  `Sleuth Walkthoughs <https://pachterlab.github.io/sleuth/walkthroughs>`_
+an Atmosphere image. Then we will follow a R script based on the  |Sleuth Walkthoughs|
 
-  1. If necessary, launch the `CyVerse Workshop Training Image <https://atmo.cyverse.org/application/images/1479>`_;
+  1. If necessary, launch the |CyVerse Training Workshop Image|;
      a 'Small1' instance size should be sufficient.
 
   2. When the instance becomes available, open a web browser and navigate to your
@@ -55,8 +57,8 @@ an Atmosphere image. Then we will follow a R script based on the  `Sleuth Walkth
         iget -rPV /iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results
         iget -rPV /iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R
 
-  4. Load the `sample_kallisto_script.R <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/sample_kallisto_script.R>`_
-     into your R Studio session. Use the `Kallisto_demo_tsv <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/kallisto_demo.tsv>`_ file for the step
+  4. Load the |sample_kallisto_script.R|
+     into your R Studio session. Use the |Kallisto_demo_tsv| file for the step
      where you describe experimental design metadata.
 
 
@@ -245,3 +247,27 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+
+.. |Sleuth manual| raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/about" target="blank">Sleuth</a>
+
+.. |Example directory of Kallisto results| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results" target="_blank">Example directory of Kallisto results</a>
+
+.. |Sleuth Walkthoughs| raw:: html
+
+    <a href="https://pachterlab.github.io/sleuth/walkthroughs" target="_blank">Sleuth Walkthoughs</a>
+
+.. |CyVerse Training Workshop Image| raw:: html
+
+   <a href="https://atmo.cyverse.org/application/images/1479" target="blank">CyVerse Training Workshop Image</a>
+
+.. |sample_kallisto_script.R| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/sample_kallisto_script.R" target="_blank">sample_kallisto_script.R</a>
+
+.. |Kallisto_demo_tsv| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/kallisto_demo.tsv" target="_blank">Kallisto_demo_tsv</a>

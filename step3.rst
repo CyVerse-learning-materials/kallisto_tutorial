@@ -1,3 +1,5 @@
+.. include:: cyverse_rst_defined_substitutions.txt
+
 |CyVerse logo|_
 
 |Home_Icon|_
@@ -25,10 +27,10 @@ tutorial will take only several minutes to complete.
       - Example
     * - Kallisto Index
       - Indexed transcriptome
-      - `Example Kallisto index <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/02_output_kallisto_index/Arabidopsis_thaliana.TAIR10.36.cdna.all.fa.index>`_
+      - |Example Kallisto index|
     * - RNA-Seq Reads
       - Cleaned fastq files
-      - `Example fastq files <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed>`_
+      - |Example fastq files|
 
 
 
@@ -75,17 +77,17 @@ Kallisto jobs will generate 3 files per read pair:
       - HDF5 binary file containing run info, abundance estimates,
         bootstrap estimates, and transcript length information length.
         This file can be read in by Sleuth
-      - `example abundance.h5 <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.h5>`_
+      - |example abundance.h5|
     * - abundances.tsv
       - plaintext file of the abundance estimates. It does not contains
         bootstrap estimates. When plaintext mode is selected; output plaintext
         abundance estimates. Alternatively, kallisto h5dump will output
         an HDF5 file to plaintext. The first line contains a header for each
         column, including estimated counts, TPM, effective length.
-      - `example abundance.tsv <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.tsv>`_
+      - |example abundance.tsv|
     * - run_info.json
       - a json file containing information about the run
-      - `example json <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/run_info.json>`_
+      - |example json|
 
 ----
 
@@ -130,3 +132,23 @@ the Kallisto results in R Studio.
 .. |file2| raw:: html
 
     <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed/SRR1761506_R2_001.fastq.gz_rp.trimmed.fastq.gz" target="_blank">SRR1761506_R2_001.fastq.gz_fp.trimmed.fastq.gz</a>
+
+.. |Example Kallisto index| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/02_output_kallisto_index/Arabidopsis_thaliana.TAIR10.36.cdna.all.fa.index" target="_blank">Example Kallisto index</a>
+
+.. |Example fastq files| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed" target="_blank">Example fastq files</a>
+
+.. |example abundance.h5| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.h5" target="_blank">example abundance.h5</a>
+
+.. |example abundance.tsv| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.tsv" target="_blank">example abundance.tsv</a>
+
+.. |example json| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/run_info.json" target="_blank">example json</a>

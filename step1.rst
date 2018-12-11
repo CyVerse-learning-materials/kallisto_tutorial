@@ -1,3 +1,5 @@
+.. include:: cyverse_rst_defined_substitutions.txt
+
 |CyVerse logo|_
 
 |Home_Icon|_
@@ -10,17 +12,17 @@ Organize Kallisto Input Data
 **Description:**
 
 Kallisto has relatively few input requirements. You will need to have either
-single or paired end reads, as well as a refference transcriptome. It is suggested
-that your RNA-Seq reads are analyzed using `FastQC <https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/>`_,
+single or paired end reads, as well as a reference transcriptome. It is suggested
+that your RNA-Seq reads are analyzed using |FastQC|,
 followed by any additional trimming and filtering using and application such as
-`Trimmomatic <https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/>`_.
+|Trimmomatic|.
 
 .. note::
 
     **About the Sample Dataset**
-    In this tutorial, we are using publically available data from the SRA. This
+    In this tutorial, we are using publicly available data from the SRA. This
     tutorial will start with cleaned and processed reads. The SRA experiment used
-    data from bioproject PRJNA272719 `<https://www.ncbi.nlm.nih.gov/bioproject/PRJNA272719>`_.
+    data from bioproject |PRJNA272719|.
     The abstract from that project is reprinted here:
 
     'To survey transcriptome changes by the mutations of a DNA demethylase ROS1
@@ -29,7 +31,7 @@ followed by any additional trimming and filtering using and application such as
     (ros1-3, ros1-4; Penterman et al. 2007 [PMID: 17409185])
     with the wild-type Col line (wt) were subjected. Overall design:
     Three samples (ros1-3, ros1-4 and wt), biological triplicates, ABA or mock
-    treatment, using Illumina HiSeq 2500 system' `[citation] <https://www.ncbi.nlm.nih.gov/bioproject/PRJNA272719>`_.
+    treatment, using Illumina HiSeq 2500 system' |citation|.
 
 ----
 
@@ -41,9 +43,9 @@ followed by any additional trimming and filtering using and application such as
     * - Input
       - Description
       - Example
-    * - Refference transcriptome
+    * - Reference transcriptome
       - fasta
-      - `Example transcriptome <http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome>`_
+      - |Example transcriptome|
 
 *Importing Reference  Transcriptome*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +64,7 @@ for your organism of interest, or provide your own fasta-formmatted transcriptom
   4. Right-click/command-click on the `Arabidopsis_thaliana.TAIR10.cdna.all.fa.gz`
      and copy the link location/URL to the clipboard
 
-  5. Login to the CyVerse |discovery_enviornment|. 
+  5. Login to the CyVerse |discovery_enviornment|.
 
   6. In your home directory, create a folder to organize your Kallisto project
 
@@ -80,7 +82,7 @@ for your organism of interest, or provide your own fasta-formmatted transcriptom
       - Example
     * - Reference transcriptome
       - fasta
-      - `Example transcriptome`_
+      - |Example transcriptome|
 
 
 ----
@@ -128,3 +130,23 @@ your RNA-Seq reads in the folder created in step 6 above.
 .. |discovery_enviornment| raw:: html
 
     <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
+
+.. |FastQC| raw:: html
+
+    <a href="https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/" target="_blank">FastQC</a>
+
+.. |Trimmomatic| raw:: html
+
+    <a href="https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/" target="blank">Trimmomatic</a>
+
+.. |citation| raw:: html
+
+    <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA272719" target="blank">citation</a>
+
+.. |Example transcriptome| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome" target="blank">Example transcriptome</a>
+
+.. |PRJNA272719| raw:: html
+
+    <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA272719" target="_blank">PRJNA272719</a>
