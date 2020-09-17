@@ -1,6 +1,6 @@
 .. include:: cyverse_rst_defined_substitutions.txt
 
-|CyVerse logo|_
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -78,8 +78,14 @@ of the RNA-Seq reads.
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/kallisto_tutorial>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
 
 ----
 

@@ -1,6 +1,6 @@
 .. include:: cyverse_rst_defined_substitutions.txt
 
-|CyVerse logo|_
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -308,19 +308,22 @@ Additional information, help
     Short description and links to any reading materials (KEEP THIS on LAST PAGE
     of Tutorial)
 
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
 
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
+
+
 
 ----
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/kallisto_tutorial>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
 
 ----
 
