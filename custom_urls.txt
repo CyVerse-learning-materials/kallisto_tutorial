@@ -1,0 +1,179 @@
+.. Comment: Version 2.0, May 2020
+.. Comment: URLS
+
+
+.. Comment: Fix this link if you are using a quicklaunch button
+
+.. |CyVerse_launch| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/  target="_blank"
+
+
+
+.. |Github Repo Link| raw:: html
+
+   <a href="https://github.com/CyVerse-learning-materials/kallisto_tutorial" target="blank">Github Repo Link</a>
+
+
+.. |Kallisto Index| raw:: html
+
+   <a href="https://de.cyverse.org/de/?type=apps&app-id=ee7ce21e-645c-11e5-a295-d7e4d1e00ab5&system-id=de" target="blank">Kallisto-0.42.3-index</a>
+
+.. |Kallisto manual| raw:: html
+
+   <a href="https://pachterlab.github.io/kallisto/manual"
+   target="blank">Kallisto manual</a>
+
+.. |Kallisto Quant App| raw:: html
+
+   <a href="https://de.cyverse.org/de/?type=apps&app-id=c304d9de-66eb-11e5-83d0-b36f5d747f5c&system-id=de" target="blank">Kallisto-0.42.3-quant-PEp</a>
+
+.. |CyVerse Training Workshop Image| raw:: html
+
+   <a href="https://atmo.cyverse.org/application/images/1479" target="blank">CyVerse Training Workshop Image</a>
+
+.. |Sleuth manual| raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/about" target="blank">Sleuth manual</a>
+
+.. |Trimmomatic| raw:: html
+
+    <a href="https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/" target="blank">Trimmomatic</a>
+
+.. |Example fastQ files| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed" target="blank">Example fastQ files</a>
+
+.. |Example transcriptome| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome" target="blank">Example transcriptome</a>
+
+.. |ensembl| raw:: html
+
+    <a href="http://plants.ensembl.org/Arabidopsis_thaliana/Info/Index" target="_blank">http://plants.ensembl.org/Arabidopsis_thaliana/Info/Index</a>
+
+.. |fasta link| raw:: html
+
+    <a href="ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/" target="_blank">ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/</a>
+
+.. |ftp link| raw:: html
+
+    <a href="ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/cdna/" target="_blank">ftp://ftp.ensemblgenomes.org/pub/plants/release-36/fasta/arabidopsis_thaliana/cdna/</a>
+
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
+
+.. |FastQC| raw:: html
+
+    <a href="https://cyverse-fastqc-quickstart.readthedocs-hosted.com/en/latest/" target="_blank">FastQC</a>
+
+.. |Trimmomatic| raw:: html
+
+    <a href="https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/" target="blank">Trimmomatic</a>
+
+.. |citation| raw:: html
+
+    <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA272719" target="blank">citation</a>
+
+.. |Example transcriptome| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome" target="blank">Example transcriptome</a>
+
+.. |PRJNA272719| raw:: html
+
+    <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA272719" target="_blank">PRJNA272719</a>
+
+
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment<a>
+
+.. |kallisto index| raw:: html
+
+    <a href="https://de.cyverse.org/de/?type=apps&app-id=ee7ce21e-645c-11e5-a295-d7e4d1e00ab5&system-id=de" target="_blank">Kallisto-0.42.3-index App<a>
+
+.. |Kallisto paper| raw:: html
+
+    <a href="https://www.nature.com/nbt/journal/v34/n5/full/nbt.3519.html" target="_blank">Kallisto paper</a>
+
+.. |Example transcriptome| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome" target="blank">Example transcriptome</a>
+
+.. |Example Kallisto index| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/02_output_kallisto_index/Arabidopsis_thaliana.TAIR10.36.cdna.all.fa.index" target="_blank">Example Kallisto index</a>
+
+
+.. |discovery_enviornment| raw:: html
+
+    <a href="https://de.cyverse.org/de/" target="_blank">Discovery Environment</a>
+
+.. |kallisto quant| raw:: html
+
+    <a href="https://de.cyverse.org/de/?type=apps&app-id=c304d9de-66eb-11e5-83d0-b36f5d747f5c&system-id=de" target="_blank">Kallisto-0.42.3-quant-PE App</a>
+
+.. |file1| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed/SRR1761506_R1_001.fastq.gz_fp.trimmed.fastq.gz" target="_blank">SRR1761506_R1_001.fastq.gz_fp.trimmed.fastq.gz</a>
+
+.. |file2| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed/SRR1761506_R2_001.fastq.gz_rp.trimmed.fastq.gz" target="_blank">SRR1761506_R2_001.fastq.gz_fp.trimmed.fastq.gz</a>
+
+.. |Example Kallisto index| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/02_output_kallisto_index/Arabidopsis_thaliana.TAIR10.36.cdna.all.fa.index" target="_blank">Example Kallisto index</a>
+
+.. |Example fastq files| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed" target="_blank">Example fastq files</a>
+
+.. |example abundance.h5| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.h5" target="_blank">example abundance.h5</a>
+
+.. |example abundance.tsv| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.tsv" target="_blank">example abundance.tsv</a>
+
+.. |example json| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/run_info.json" target="_blank">example json</a>
+
+
+.. |Sleuth manual| raw:: html
+
+   <a href="https://pachterlab.github.io/sleuth/about" target="blank">Sleuth</a>
+
+.. |Example directory of Kallisto results| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results" target="_blank">Example directory of Kallisto results</a>
+
+.. |Sleuth Walkthoughs| raw:: html
+
+    <a href="https://pachterlab.github.io/sleuth/walkthroughs" target="_blank">Sleuth Walkthoughs</a>
+
+.. |CyVerse Training Workshop Image| raw:: html
+
+   <a href="https://atmo.cyverse.org/application/images/1479" target="blank">CyVerse Training Workshop Image</a>
+
+.. |sample_kallisto_script.R| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/sample_kallisto_script.R" target="_blank">sample_kallisto_script.R</a>
+
+.. |Kallisto_demo_tsv| raw:: html
+
+    <a href="http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/kallisto_demo.tsv" target="_blank">Kallisto_demo_tsv</a>
+
+.. |Kallisto app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=6132e25c-6576-4c84-bd6f-9e343e5ef03a&app-id=c341ba8c-30ad-11e8-8fb4-008cfa5ae621  target="_blank"
+
+.. |Sleuth app| image:: ./img/Powered-By-CyVerse-blue.png
+    :width: 125
+    :height: 20
+    :target: https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=3125ee9a-9f0c-4f4c-8efd-aa6f7ea00405&app-id=8eb1291c-34ea-11eb-b90c-008cfa5ae621  target="_blank"
