@@ -1,7 +1,7 @@
 .. include:: cyverse_rst_defined_substitutions.txt
 .. include:: custom_urls.txt
 
-|CyVerse logo|_
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -89,6 +89,7 @@ your RNA-Seq reads in the folder created in step 6 above.
 - Report an issue or submit a change:
   |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
 
 ----
 

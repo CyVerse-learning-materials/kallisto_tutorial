@@ -11,11 +11,11 @@ extensions = [
     'sphinx.ext.autodoc',
 ]
 
-project = 'YOUR PROJECT NAME HERE'
+project = 'RNA-Seq with Kallisto and Sleuth'
 copyright = '2020, CyVerse'
 author = 'CyVerse'
 version = '2.0'
-release = '2.0'
+version = '2.0'
 
 language = None
 source_parsers = {
@@ -80,3 +80,7 @@ def setup(app):
     app.add_javascript('detail-expand.js')
     app.add_javascript('question-answer.js')
     app.add_javascript('intercom-script-for-learning.js')
+    app.add_stylesheet('detail-expand.css')
+    app.add_stylesheet('question-answer.css')
+    app.add_javascript('detail-expand.js')
+    app.add_javascript('question-answer.js')

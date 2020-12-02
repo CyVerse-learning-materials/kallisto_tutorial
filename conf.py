@@ -10,11 +10,11 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from misc.cyverse_sphinx_conf import *  # noqa
 
-project = 'RNA-Seq with Kallisto and Sleuth'
+project = 'RNA-Seq with Kallisto and Sleuth Tutorial'
 copyright = '2020, CyVerse'
-author = 'Jason Williams'
+author = 'CyVerse'
 version = '2.0'
-release = '2.0'
+version = '2.0'
 
 epub_title = project
 epub_author = author
