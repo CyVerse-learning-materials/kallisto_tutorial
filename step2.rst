@@ -48,14 +48,17 @@ of RNA-Seq reads against the transcriptome index.
 
   1. If necessary, login to the CyVerse |discovery_enviornment|.
 
-  2. In the App panel, open the **Kallisto v.0.43.1** app or click this link:
+  2. In the App panel, open the **Kallisto v.0.43.1** app or click this
+     link:
      |kallisto app|
 
-  3. Name your analysis, and if desired enter comments. In the App's 'Input'
-     step under 'The transcript fasta file supplied (fasta or gzipped)' browse
-     to and select the transcriptome imported in the previous section.
+  3. Name your analysis, and if desired enter comments and click
+     'Next.' In the App's 'Input' section under 'The transcript fasta
+     file supplied (fasta or gzipped)' browse to and select the
+     transcriptome imported in the previous section.
 
-  4. Under Paired of single end choose the format used in your sequencing.
+  4. Under Paired of single end choose the format used in your
+     sequencing.
 
      .. admonition:: Sample data
 
@@ -63,12 +66,15 @@ of RNA-Seq reads against the transcriptome index.
 
      .. note::
 
-        For single-end data you will also need to choose fragement length and
-        fragment standard deviation values in the apps "Options" section.
+        For single-end data you will also need to choose fragment
+        length and
+        fragment standard deviation values in the apps "Options"
+        section.
+        You may also adjust settings for strand-specific reads.
 
-  5. Under 'FASTQ Files (Read 1)' navigate to your data and select all the left-
-     read files (usually R1). For paired-end data also enter the right-read
-     files (usually R2) .
+  5. Under 'FASTQ Files (Read 1)' navigate to your data and select all
+     the left-read files (usually R1). For paired-end data also enter
+     the right-read files (usually R2) .
 
      .. admonition:: Sample data
 
@@ -79,29 +85,28 @@ of RNA-Seq reads against the transcriptome index.
        - For FASTQ Files (Read 2) choose all 18 files ending labeled R2 (e.g.
          *SRR1761506_R2_001.fastq.gz_fp.trimmed.fastq.gz*)
 
-
-  6. If desired adjust the k-mer length (See |Kallisto paper| for
-     recommendations);
-
-     .. admonition:: Sample data
-
-        We will use the default.
-
-  7. If desired adjust the bootstrap value (See |Kallisto paper| for
-     recommendations);
+  6. If desired adjust the bootstrap value (See |Kallisto paper| for
+     recommendations); Click 'Next' to continue.
 
      .. admonition:: Sample data
 
         We will use 25.
 
-  8. Click 'Launch Analyses' to start the job. Click on the Analyses button
-     to monitor the job and results.
+  7. If desired adjust the resources required and/or click 'Next.'
+
+     .. admonition:: Sample data
+
+       For the sample data, we will not specify resources.
+
+
+  8. Finally click 'Launch Analyses' to start the job. Click on the
+     Analyses menu to monitor the job and results.
 
 
 **Output/Results**
 
-Kallisto jobs will generate and index file and 3 output files per read / read-
-pair:
+Kallisto jobs will generate and index file and 3 output files per read
+/ read-pair:
 
 .. list-table::
     :header-rows: 1

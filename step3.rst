@@ -12,9 +12,9 @@ Analyze Kallisto Results with Sleuth
 
 **Description:**
 
-|Sleuth manual| is a program for analysis of RNA-Seq experiments for which
-transcript abundances have been quantified with Kallisto. In this tutorial, we
-will use R Studio being served from an VICE instance.
+|Sleuth manual| is a program for analysis of RNA-Seq experiments for
+which transcript abundances have been quantified with Kallisto. In this
+tutorial, we will use R Studio being served from an VICE instance.
 
 ----
 
@@ -36,14 +36,15 @@ will use R Studio being served from an VICE instance.
 
 
 
-We will import the Kallisto results into an RStudio session being run from
-an Atmosphere image. Then we will follow a R script based on the  |Sleuth Walkthoughs|
+We will import the Kallisto results into an RStudio session being run
+from an Atmosphere image. Then we will follow a R script based on the
+|Sleuth Walkthoughs|.
 
 
   1. If necessary, login to the CyVerse |discovery_enviornment|.
 
-  2. In the App panel, open the **Sleuth RStudio** app or click this link:
-     |Sleuth app|
+  2. In the App panel, open the **Sleuth RStudio** app or click this
+     link:|Sleuth app|
 
   3. Name your analysis, and if desired enter comments.
 
@@ -55,16 +56,17 @@ an Atmosphere image. Then we will follow a R script based on the  |Sleuth Walkth
        For the sample data, navigate to and select
        **/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/sleuth_tutorial.Rmd**
 
-  5. In the 'Datasets' section, under 'Data for analysis (outputs of Kallisto
-     quantification)' choose the folders containing quantification information for all sets of reads.
+  5. In the 'Datasets' section, under 'Data for analysis (outputs of
+     Kallisto quantification)' choose the folders containing
+     quantification information for all sets of reads.
 
      .. admonition:: Sample data
 
        For the sample data, navigate to and select
        **/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results**
 
-  6. In the 'Datasets' section, under 'Study design file' choose a TSV file
-     describing the samples and study design (see |Sleuth manual|).
+  6. In the 'Datasets' section, under 'Study design file' choose a TSV
+     file describing the samples and study design (see |Sleuth manual|).
 
      .. admonition:: Sample data
 
@@ -73,19 +75,25 @@ an Atmosphere image. Then we will follow a R script based on the  |Sleuth Walkth
 
     .. tip::
 
-       See the Example study design (|Kallisto_demo_tsv|) TSV file. You can
-       create and edit your own in a spreadsheet editing program. The |Sleuth
-       manual| explains this file and more is described in this tutorial's RMarkdown notebook.
+       See the Example study design (|Kallisto_demo_tsv|) TSV file. You
+       can create and edit your own in a spreadsheet editing program.
+       The |Sleuth manual| explains this file and more is described in
+       this tutorial's RMarkdown notebook.
 
-  7. Click 'Launch Analyses' to start the job. Click on the Analyses button
-     to monitor the job and results. In your notifications, you will find a
-     link to your VICE session ("Access your running analyses here"); this may
-     take a few minutes to become active.
+  7. If desired adjust the resources required and/or click 'Next.'
+
+     .. admonition:: Sample data
+
+       For the sample data, we will not specify resources.
+
+  8. Click 'Launch Analyses' to start the job. Click on the Analyses
+     button to monitor the job and results. In your Analyses menu, you
+     will find a link to your VICE session ; this may take a few minutes to become active.
 
 
-  8. In your RStudio session, double click on the **sleuth_tutorial.Rmd** file
-     and follow the tutorial by pressing the green "play" triangles in each
-     section of code. The code for the notebook is replicated below:
+  9. In your RStudio session, double click on the
+     **sleuth_tutorial.Rmd** file and follow the tutorial by pressing
+     the green "play" triangles in each section of code. The code for the notebook is replicated below:
 
 
 
