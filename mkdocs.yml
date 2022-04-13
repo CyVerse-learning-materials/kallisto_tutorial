@@ -15,10 +15,10 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 # Navigation Page
 
 nav:
-  - 'Home': docs/index.md
-  - 'Organize Kallisto Input Data': docs/step1.md
-  - 'Build Kallisto Transcriptome Index': docs/step2.md
-  - 'Analyze Kallisto Results with Sleuth': docs/step3.md
+  - 'Home': index.md
+  - 'Organize Kallisto Input Data': step1.md
+  - 'Build Kallisto Transcriptome Index': step2.md
+  - 'Analyze Kallisto Results with Sleuth': step3.md
 
 # JavaScript for Intercom Widget
 extra_javascript:
