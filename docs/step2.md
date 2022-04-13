@@ -7,14 +7,14 @@ build the index in this step.
 
 ------------------------------------------------------------------------
 
-**Input Data:**
+## Input Data
 
 | Input | Description | Example |
 |---|---|---|
 | Reference Transcriptome | fasta | [Example Transcriptome](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome) |
 | RNA-Seq Reads | Cleaned fastq files | [Example fastq files](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed) |
 
-**Build Kallisto Index and Quantify Reads**
+## **Build Kallisto Index and Quantify Reads**
 
 We will now index the Arabidopsis transcriptome imported from Ensembl.
 This transcriptome can be used multiple times for future Kallisto
@@ -34,7 +34,7 @@ index.
 4\. Under Paired of single end choose the format used in your
     sequencing.
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         For the sample data, choose **Paired**
 
 !!! Warning
@@ -46,7 +46,7 @@ index.
     the left-read files (usually R1). For paired-end data also enter
     the right-read files (usually R2) .
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         For the sample data, navigate to
         **/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed**
 
@@ -58,18 +58,18 @@ index.
 6\. If desired adjust the bootstrap value (See [kallisto paper](https://www.nature.com/nbt/journal/v34/n5/full/nbt.3519.html) for recommendations);
     Click 'Next' to continue.
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         We will use 25.
 
 7\.  If desired adjust the resources required and/or click 'Next.'
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         For the sample data, we will not specify resources.
 
 8\.  Finally click 'Launch Analyses' to start the job. Click on the
     Analyses menu to monitor the job and results.
 
-**Output/Results**
+## Output/Results
 
 Kallisto jobs will generate and index file and 3 output files per read /
 read-pair:
@@ -77,13 +77,13 @@ read-pair:
 | Output | Description | Example |
 |---|---|---|
 | Kallisto Index | This is the index file Kallisto will map RNA-Seq reads to. | [Example Kallisto index](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/02_output_kallisto_index/Arabidopsis_thaliana.TAIR10.36.cdna.all.fa.index) | 
-| abundances.h5	HDF5 binary file containing run info, abundance estimates, bootstrap estimates, and transcript length information length. This file can be read in by Sleuth | [example abundance.h5](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.h5) |
+| abundances.h5 | HDF5 binary file containing run info, abundance estimates, bootstrap estimates, and transcript length information length. This file can be read in by Sleuth | [example abundance.h5](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.h5) |
 | abundances.tsv | plaintext file of the abundance estimates. It does not contains bootstrap estimates. When plaintext mode is selected; output plaintext abundance estimates. Alternatively, kallisto h5dump will output an HDF5 file to plaintext. The first line contains a header for each column, including estimated counts, TPM, effective length. | [example abundance.tsv](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/abundance.tsv) |
 | run_info.json | a json file containing information about the run | [example json](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results/pair01_wt_mock_r1/run_info.json) |
 
 ------------------------------------------------------------------------
 
-**Description of results and next steps**
+## Description of results and next steps
 
 First, this application runs the 'kallisto index' command to build the
 the index of the transcriptome. Then the 'kallisto quant' command is run

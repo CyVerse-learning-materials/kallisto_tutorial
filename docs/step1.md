@@ -9,13 +9,13 @@ any additional trimming and filtering using and application such as Trimmomatic.
 
 ------------------------------------------------------------------------
 
-**Input Data:**
+## Input Data
 
 | Input | Description | Example |
 |---|---|---|
 | Reference Transcriptome | fasta | [Example Transcriptome](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome) |
 
-**Importing Reference Transcriptome**
+## Importing Reference Transcriptome
 
 In this example, we will import a reference transcriptome for
 Arabidopsis from Ensembl. In many cases you can find an appropriate
@@ -36,7 +36,7 @@ your own fasta-formmatted transcriptome.
      select, 'Import from URL...'; paste in the Ensembl link and click
      'Import from URL' to begin the import
 
-**Output/Results:**
+## Output/Results
 
 | Output | Description | Example |
 |---|---|---|
@@ -44,7 +44,7 @@ your own fasta-formmatted transcriptome.
 
 ------------------------------------------------------------------------
 
-**Description of results and next steps**
+## Description of results and next steps
 
 This example transcriptome will be indexed in the next step. RNA-Seq
 reads will be mapped against this set of transcripts. Once you have the
