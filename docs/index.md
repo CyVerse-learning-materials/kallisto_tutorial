@@ -17,6 +17,7 @@ Who to contact if this manual needs fixing. You can also email
 [<Tutorials@CyVerse.org>](Tutorials@CyVerse.org)
 
 | Maintainer | Institution | Contact |
+|---|---|---|
 | Jason Williams | CyVerse / Cold Spring Harbor Laboratory | [Williams@cshl.edu](Williams@cshl.edu) |
 
 ------------------------------------------------------------------------
@@ -28,7 +29,7 @@ Who to contact if this manual needs fixing. You can also email
 *In order to complete this tutorial you will need access to the
 following services/software*
 
-| Prerequisite	| Preparation/Notes	| Link/Download |
+| Prerequisite | Preparation/Notes | Link/Download |
 |---|---|---|
 | CyVerse account | You will need a CyVerse account to complete this exercise | [CyVerse User Portal](https://user.cyverse.org/) |
 
