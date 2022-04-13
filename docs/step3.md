@@ -58,7 +58,7 @@ from an Atmosphere image. Then we will follow a R script based on the .
     the green "play" triangles in each section of code. The code for
     the notebook is replicated below:
 
-``` r
+```
 
 ---
 title: "Sleuth RNA-Seq Tutorial - Arabidopsis" 
@@ -79,27 +79,27 @@ lab](<https://pachterlab.github.io/sleuth_walkthroughs/boj/analysis.html>)
 Next, we need to load the Sleuth library to begin. We will also
 check the version:
 
-\```{r message=FALSE} 
+````{r message=FALSE} 
 require("sleuth") 
 packageVersion("sleuth") 
-\```
+````
 
 We will also install a plotting library and some other functions
 we will need...
 
-\```{r echo=FALSE, message=FALSE, warning=FALSE} 
+````{r echo=FALSE, message=FALSE, warning=FALSE} 
 library("gridExtra") 
 library("cowplot") 
-\```
+````
 
 We will also use
 [biomaRt](<https://bioconductor.org/packages/release/bioc/html/biomaRt.html>)
 tools will allow us to pull in recognizable gene names from a
 database.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE} 
+````{r echo=FALSE, message=FALSE, warning=FALSE} 
 library("biomaRt") 
-\```
+````
 
 ## Step 2: Load experimental design and label kallisto outputs
 with metadata
@@ -108,36 +108,41 @@ with metadata
 
 We need to provide Sleuth with our sample names:
 
-```{r} 
+````{r} 
 sample_id <- dir(file.path("~/kallisto_qaunt_output/")) 
 sample_id 
-\```
+````
 
 We also need to get the file paths to our results files.
-```{r} kal_dirs <- file.path("~/kallisto_qaunt_output", sample_id) 
-\```
+
+````{r} 
+kal_dirs <- file.path("~/kallisto_qaunt_output", sample_id) 
+````
 
 We also need a table that provides more meaningful names for
 describing our experiment...
 
-```{r} 
+````{r} 
 s2c <- read.table(file.path("~/kallisto_demo.tsv"),
                             header = TRUE,
                             stringsAsFactors = FALSE,
                             sep = "\t") 
-\```
+````
 
 We will add our file paths to the table
 
-```{r} 
+````{r} 
 s2c <- dplyr::mutate(s2c, path = kal_dirs) 
-\```
+````
 
-Let\'s view the table we have created: 
+Let's view the table we have created: 
 
-```{r} 
+````{r} 
 s2c 
-\```
+````
+
+```
+
 
 ## Step 3: Load gene names from Ensembl
 
