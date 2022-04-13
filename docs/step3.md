@@ -24,36 +24,36 @@ from an Atmosphere image. Then we will follow a R script based on the .
 4.  (Optional) In the 'Notebooks' section, under 'Select an RMarkdown
     notebook to run' select a notebook.
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         For the sample data, navigate to and select **/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/sleuth_tutorial.Rmd**
 
-5.  In the 'Datasets' section, under 'Data for analysis (outputs of
+5\.  In the 'Datasets' section, under 'Data for analysis (outputs of
     Kallisto quantification)' choose the folders containing
     quantification information for all sets of reads.
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         For the sample data, navigate to and select **/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results**
 
-6.  In the 'Datasets' section, under 'Study design file' choose a TSV
+6\.  In the 'Datasets' section, under 'Study design file' choose a TSV
     file describing the samples and study design (see [Sleuth manual](https://pachterlab.github.io/sleuth/about)).
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         For the sample data, navigate to and select **/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/kallisto_demo.tsv**
 
 !!! Tip 
         See the Example study design ([Kallisto demo tsv](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/04_sleuth_R/kallisto_demo.tsv)) TSV file. You can create and edit
         your own in a spreadsheet editing program. The [Sleuth manual](https://pachterlab.github.io/sleuth/about)explains this file and more is described in this tutorial's RMarkdown notebook.
 
-7.  If desired adjust the resources required and/or click 'Next.'
+7\.  If desired adjust the resources required and/or click 'Next.'
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         For the sample data, we will not specify resources.
 
-8.  Click 'Launch Analyses' to start the job. Click on the Analyses
+8\.  Click 'Launch Analyses' to start the job. Click on the Analyses
     button to monitor the job and results. In your Analyses menu, you
     will find a link to your VICE session ; this may take a few
     minutes to become active.
-9.  In your RStudio session, double click on the
+9\.  In your RStudio session, double click on the
     **sleuth_tutorial.Rmd** file and follow the tutorial by pressing
     the green "play" triangles in each section of code. The code for
     the notebook is replicated below:

@@ -62,7 +62,7 @@ inputs prepared*
 
 ## Sample Data and Working with Your Own Data
 
-!!! Warning: Sample data
+!!! Note "Sample data"
         **About the Sample Dataset** In this tutorial, we are using publicly
         available data from the SRA. This tutorial will start with cleaned and
         processed reads. The SRA experiment used data from bioproject [PRJNA272719](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA272719). The abstract from that project is reprinted here:
