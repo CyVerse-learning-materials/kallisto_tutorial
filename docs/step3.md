@@ -58,8 +58,7 @@ from an Atmosphere image. Then we will follow a R script based on the .
     the green "play" triangles in each section of code. The code for
     the notebook is replicated below:
 
-```
-
+```r
 ---
 title: "Sleuth RNA-Seq Tutorial - Arabidopsis" 
 output:
@@ -69,10 +68,8 @@ output:
 
 This tutorial will take you through a sample RNA-Seq analysis
 using [kallisto](<https://pachterlab.github.io/kallisto/about>),
-using an RNA-Seq R package
-[Sleuth](<https://pachterlab.github.io/sleuth/about>). This
-tutorial is based on the one by the [Pachter
-lab](<https://pachterlab.github.io/sleuth_walkthroughs/boj/analysis.html>)
+using an RNA-Seq R package [Sleuth](<https://pachterlab.github.io/sleuth/about>). 
+This tutorial is based on the one by the [Pachterlab](<https://pachterlab.github.io/sleuth_walkthroughs/boj/analysis.html>)
 
 ## Step 1: Load Sleuth and accessory libraries
 
