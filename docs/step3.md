@@ -58,7 +58,7 @@ from an Atmosphere image. Then we will follow a R script based on the .
     the green "play" triangles in each section of code. The code for
     the notebook is replicated below:
 
-```r
+````
 ---
 title: "Sleuth RNA-Seq Tutorial - Arabidopsis" 
 output:
@@ -76,27 +76,27 @@ This tutorial is based on the one by the [Pachterlab](<https://pachterlab.github
 Next, we need to load the Sleuth library to begin. We will also
 check the version:
 
-````{r message=FALSE} 
+```{r message=FALSE} 
 require("sleuth") 
 packageVersion("sleuth") 
-````
+```
 
 We will also install a plotting library and some other functions
 we will need...
 
-````{r echo=FALSE, message=FALSE, warning=FALSE} 
+```{r echo=FALSE, message=FALSE, warning=FALSE} 
 library("gridExtra") 
 library("cowplot") 
-````
+```
 
 We will also use
 [biomaRt](<https://bioconductor.org/packages/release/bioc/html/biomaRt.html>)
 tools will allow us to pull in recognizable gene names from a
 database.
 
-````{r echo=FALSE, message=FALSE, warning=FALSE} 
+```{r echo=FALSE, message=FALSE, warning=FALSE} 
 library("biomaRt") 
-````
+```
 
 ## Step 2: Load experimental design and label kallisto outputs
 with metadata
@@ -105,38 +105,38 @@ with metadata
 
 We need to provide Sleuth with our sample names:
 
-````{r} 
+```{r} 
 sample_id <- dir(file.path("~/kallisto_qaunt_output/")) 
 sample_id 
-````
+```
 
 We also need to get the file paths to our results files.
 
-````{r} 
+```{r} 
 kal_dirs <- file.path("~/kallisto_qaunt_output", sample_id) 
-````
+```
 
 We also need a table that provides more meaningful names for
 describing our experiment...
 
-````{r} 
+```{r} 
 s2c <- read.table(file.path("~/kallisto_demo.tsv"),
                             header = TRUE,
                             stringsAsFactors = FALSE,
                             sep = "\t") 
-````
+```
 
 We will add our file paths to the table
 
-````{r} 
+```{r} 
 s2c <- dplyr::mutate(s2c, path = kal_dirs) 
-````
+```
 
 Let's view the table we have created: 
 
-````{r} 
+```{r} 
 s2c 
-````
+```
 ## Step 3: Load gene names from Ensembl
 
 Next we need to determine which biomaRt to use. This can be a
@@ -145,44 +145,44 @@ little complex so be sure to read their
 This [blog post](<https://nsaunders.wordpress.com/2015/04/28/some-basics-of-biomart/>)
 is also helpful.
 
-````{r} 
+```{r} 
 marts <- listMarts() 
 marts 
-````
+```
 
 If you are not working with these Ensembl data bases you may want
 to check out documentation on [using BiomaRts other than
 Ensembl](<https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html#using-a-biomart-other-than-ensembl>).
 We are using plants, so...
 
-````{r} 
+```{r} 
 marts <- listMarts(host = "plants.ensembl.org") 
 marts 
-````
+```
 
 For now, remember that we will want to use plants_mart.
 
 Next, we need to choose a specific data set.
 
-````{r}
+```{r}
 plants_mart <- useMart("plants_mart", host = "plants.ensembl.org" ) 
 listDatasets(plants_mart) 
-````
+```
 
 After a little looking, its the athaliana_eg_gene data set that
 we need. Finally, we need to update our plants_mart to be more
 specific.
 
-````{r} 
+```{r} 
 plants_mart <- useMart("plants_mart", dataset = "athaliana_eg_gene", host="plants.ensembl.org" ) 
-````
+```
 
 Now we want to get specific attributes from the list of genes we
 can import from biomart
 
-````{r} 
+```{r} 
 listAttributes(plants_mart) 
-````
+```
 
 We can choose whichever of these we'd like to use. Let's get
 transcript ids, gene ids, a description, and gene names. Notice,
@@ -190,41 +190,41 @@ there are many things you may want to come back for. We must get
 the transcript id because these are the names of the transcripts
 that were used in our Kallisto quantification.
 
-````{r echo=FALSE, message=FALSE, warning=FALSE} 
+```{r echo=FALSE, message=FALSE, warning=FALSE} 
 t2g <- getBM(attributes = c("ensembl_transcript_id",                                            
                             "ensembl_gene_id",                             
                             "description",
                             "external_gene_name"),              
                             mart = plants_mart)
-````
+```
 
 We need to make sure the ensembl_transcript_id column is named
 target_id
 
-````{r} 
+```{r} 
 ttg <- dplyr::rename(t2g, target_id= ensembl_transcript_id, ens_gene = ensembl_gene_id, ext_gene = external_gene_name) 
-````
+```
 
 ##Step 4: Prepare data for Sleuth
 
 first we need to alter our experimental design so that we consider
 the full transcriptome sample to be the "control" to compare to...
 
-````{r} 
+```{r} 
 s2c$genotype_variation_s <- as.factor(s2c$genotype_variation_s) 
 s2c$genotype_variation_s <- relevel(s2c$genotype_variation_s, ref = "wild type") 
-````
+```
 
 Now we need to tell Sleuth both about the Kallisto results and the
 gene names (and gene descriptions/metadata) we obtained from
 biomaRt. The sleuth_prep function does this.
 
-````{r warning=FALSE} so <- sleuth_prep(s2c,
+```{r warning=FALSE} so <- sleuth_prep(s2c,
                                         full_model = ~genotype_variation_s,
                                         target_mapping = ttg,
                                         read_bootstrap_tpm=TRUE,  
                                         extra_bootstrap_summary = TRUE)
-````
+```
 
 ##Step 5: Initial data exploration
 
@@ -239,35 +239,35 @@ together.
 library(cowplot) 
 ggplot2::theme_set(theme_cowplot()) 
 plot_pca(so, color_by = 'genotype_variation_s', text_labels = TRUE) 
-````
+```
 
 Let's try plotting by treatment
 
-````{r} 
+```{r} 
 plot_pca(so, color_by = 'treatment_s', text_labels = TRUE) 
-````
+```
 
 We can also see genes involved in the the 1st PC by looking at the
 loadings (primary genes whose linear combinations define the
 principal components)
 
-````{r} 
+```{r} 
 plot_loadings(so, pc_input = 1) 
-````
+```
 
 Let's see how this "influential" gene (at least as far as PCA
 tells us) looks by condition
 
-````{r} 
+```{r} 
 plot_bootstrap(so, 'AT2G34420.1', color_by = 'genotype_variation_s') 
-````
+```
 
 Let's see how this "influential" gene (at least as far as PCA
 tells us) looks by treatment
 
-````{r} 
+```{r} 
 plot_bootstrap(so, 'AT2G34420.1', color_by = 'treatment_s') 
-````
+```
 
 ##Step 6: Modeling, testing, and results exploration
 
@@ -278,32 +278,32 @@ expression (abundance).
 
 First we will create a model
 
-````{r} 
+```{r} 
 so <- sleuth_fit(so, ~genotype_variation_s, 'full') 
 so <- sleuth_fit(so, ~1, 'reduced') 
 so <- sleuth_lrt(so, 'reduced', 'full') 
-````
+```
 
 Now we can get the results of this analysis
 
-````{r} 
+```{r} 
 full_results <- sleuth_results(so, 'reduced:full', 'lrt',
                             show_all = FALSE) 
 head(full_results) 
-````
+```
 
 Let's add Wald test
-````{r} 
+```{r} 
 wald_test <- colnames(design_matrix(so))[2]
 so <- sleuth_wt(so, wald_test)
-````
+```
 
 And start a Shiny Browser
 
-````{r} 
+```{r} 
 sleuth_live(so) 
-````
 ```
+````
 
 ------------------------------------------------------------------------
 
