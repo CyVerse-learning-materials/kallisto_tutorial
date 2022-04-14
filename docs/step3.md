@@ -7,11 +7,13 @@ use R Studio being served from an VICE instance.
 
 ------------------------------------------------------------------------
 
+## Input  data
+
 | Input | Description | Example |
 |---|---|---|
 | Kallisto results folder(s) | Outputs from a Kallisto quantification | [Example directory of Kallisto results](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/03_output_kallisto_results) |
 
-**Import Kallisto results into R and analyze with Sleuth**
+## Import Kallisto results into R and analyze with Sleuth
 
 
 We will import the Kallisto results into an RStudio session being run
@@ -307,5 +309,7 @@ sleuth_live(so)
 
 ------------------------------------------------------------------------
 
-**Summary** Together, Kallisto and Sleuth are quick, powerful ways to
+**Summary** 
+
+Together, Kallisto and Sleuth are quick, powerful ways to
 analyze RNA-Seq data.

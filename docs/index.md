@@ -58,7 +58,7 @@ inputs prepared*
 
 | Input File(s)	| Format | Preparation/Notes | Example Data |
 |---|---|---|---|
-| RNA-Seq reads	FastQ (may also be compressed, e.g. fastq.gz) | These reads should have been cleaned by upstream tools such as [Trimmomatic](https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/)	| [Example FastQ files](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed) |
+| RNA-Seq reads	| FastQ (may also be compressed, e.g. fastq.gz) | These reads should have been cleaned by upstream tools such as [Trimmomatic](https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/)	| [Example FastQ files](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed) |
 | Reference transcriptome | fasta | Transcriptome for your organism of interest	| [Example transcriptome](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome) |
 
 ## Sample Data and Working with Your Own Data

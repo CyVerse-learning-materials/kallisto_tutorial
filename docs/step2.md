@@ -14,7 +14,7 @@ build the index in this step.
 | Reference Transcriptome | fasta | [Example Transcriptome](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/01_input_transcriptome) |
 | RNA-Seq Reads | Cleaned fastq files | [Example fastq files](http://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/tutorials/kallisto/00_input_fastq_trimmed) |
 
-## **Build Kallisto Index and Quantify Reads**
+## Build Kallisto Index and Quantify Reads
 
 We will now index the Arabidopsis transcriptome imported from Ensembl.
 This transcriptome can be used multiple times for future Kallisto
@@ -24,14 +24,14 @@ analyses. Kallisto uses a 'hash-based' pseudo alignment to deliver
 extremely fast matching of RNA-Seq reads against the transcriptome
 index.
 
-1\. If necessary, login to the CyVerse [discovery environment](https://de.cyverse.org/de/).
-2\. In the App panel, open the **Kallisto v.0.43.1** app or click this
+1. If necessary, login to the CyVerse [discovery environment](https://de.cyverse.org/de/).
+2. In the App panel, open the **Kallisto v.0.43.1** app or click this
     link: [kallisto app](https://de.cyverse.org/de/?type=quick-launch&quick-launch-id=6132e25c-6576-4c84-bd6f-9e343e5ef03a&app-id=c341ba8c-30ad-11e8-8fb4-008cfa5ae621)
-3\. Name your analysis, and if desired enter comments and click
+3. Name your analysis, and if desired enter comments and click
     'Next.' In the App's 'Input' section under 'The transcript fasta
     file supplied (fasta or gzipped)' browse to and select the
     transcriptome imported in the previous section.
-4\. Under Paired of single end choose the format used in your
+4. Under Paired of single end choose the format used in your
     sequencing.
 
 !!! Note "Sample data"
