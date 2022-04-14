@@ -2,7 +2,7 @@ docs_dir: docs/
 repo_name: 'CyVerse-learning-materials/kallisto_tutorial'
 repo_url: 'https://github.com/CyVerse-learning-materials/kallisto_tutorial'
 
-site_name: 'CyVerse Container Camp Home'
+site_name: 'Kallisto tutorial'
 site_description: 'Documentation for CyVerse Platforms and Education'
 site_author: 'CyVerse Science Team'
 site_url: 'https://learning.cyverse.org/kallisto_tutorial/'
@@ -15,7 +15,7 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 # Navigation Page
 
 nav:
-  - 'Home': index.md
+  - 'RNA-Seq with Kallisto and Sleuth': index.md
   - 'Organize Kallisto Input Data': step1.md
   - 'Build Kallisto Transcriptome Index': step2.md
   - 'Analyze Kallisto Results with Sleuth': step3.md
